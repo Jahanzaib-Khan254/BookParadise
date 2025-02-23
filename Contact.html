@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BooksParadise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="mediaQueiresForContact.css">
+    <style>
+        #Contact_h2{
+            margin: 40px;
+            text-align: center;
+            font-size: 2rem;
+            color: #2d080a;
+        }
+        .container{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 75vh;
+        }
+        label{
+            color: #2d080a;
+        }
+        form{
+            width: 100%;
+            left: 20%;
+            width: 60%;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        textarea{
+            width:30% ;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: #2d080a;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            padding: 5px;
+            width: 150px;
+            margin-bottom: 50px;
+        }
+        .btn_con{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar start -->
+    <header>
+        <div class="logo">
+            <h2>BookParadise</h2>
+        </div>
+
+         <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <div class="nav_links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+        </div>
+    </header>
+<!--Navbar End  -->
+
+<!-- FOrm Start -->
+    <h2 id="Contact_h2">Contact Us</h2>
+<div class="container">
+    <form id="contactForm">
+        <label for="name"><p>Name</p></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        
+        <label for="email"><p>Email</p></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        
+        <label for="phone"><p>Phone</p></label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <br>
+        
+        <label for="subject"><p>Subject</p></label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+        <br>
+        
+        <label for="message"><p>Message</p></label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        <br>
+    
+        <div class="btn_con">
+            <button type="submit">Submit Query</button>
+        </div>
+    </form>
+    
+</div>
+ <!-- Form End -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="Footer_content">
+        <div class="Footer_1st_child">
+            <h3>BookParadise</h3>
+        </div>
+        <div class="Footer_2nd_child">
+            <h3>BookParadise</h3>
+            <p>Your one stop shop for all  your book requirements</p>
+        </div>
+        <div class="Footer_3rd_child">
+            <h4>Follow Us</h4>
+            <li><a href="https://www.facebook.com/facebook" target="_blank"> <i class="fa-brands fa-facebook"></i> Facebbok</a></li>
+            <li><a href="https://www.instagram.com/instagram/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/linkedin/"target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        </div>
+    </div>
+    <hr>
+   <div class="copyright"><small>© 1996-2024, Amazon.com, Inc. or its affiliates</small></div>
+ </footer>
+
+ 
+ <!-- Footer end -->
+  <script src="responsive.js"></script>
+ <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        // Show alert message
+        alert("Your form has been submitted successfully!");
+
+        // Clear form fields (optional)
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

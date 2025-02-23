@@ -1,0 +1,349 @@
+@media ( min-width: 320px ) and (max-width: 480px ){
+    /* nav-Bar start */
+    header{
+        width: 100%;
+    }
+    .logo{
+        font-size: 0.80rem;
+        margin-left: 10px;
+    }
+    .menu-icon{
+        font-size: 1.2rem;
+    }
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: -20px;
+        width: 250px;
+        background-color: #441215;
+        padding: 20px;
+        text-align: left;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        height: 60vh;
+    }
+    .nav_links li {
+        margin-bottom: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav_links.show {
+        display: flex;
+    }
+    /* Ensure search box appears first */
+    #search-box {
+        order: -1; /* Moves search bar to the top */
+        width: 100%; /* Ensures full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    #searchBar {
+        width: 70%; /* Adjust width for smaller screens */
+    }
+    /* nav-Bar end */
+
+form{
+    width: 90%;
+}
+textarea{
+    width: 90%;
+}
+button{
+    width: 100px;
+    font-size: 0.90rem;
+}
+    /* FORm */
+
+    /* FOrm end */
+
+/* Footer */
+
+ .Footer_content{
+    color: white;
+    height: 30vh; 
+   display: block;
+   text-align: center;
+}
+.Footer_content p{
+    font-size: 0.70rem;
+}
+  .Footer_1st_child h3{
+    display: none;
+  }
+  .Footer_2nd_child{
+    margin: 20px;
+    font-size: 1rem;
+  }
+  .Footer_3rd_child{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.Footer_3rd_child h4{
+    font-size: 0.90rem;
+}
+.Footer_3rd_child li a{
+    font-size: 0.70rem;
+ }
+.copyright{
+    font-size: 0.60rem;
+}
+
+}
+
+@media ( min-width: 481px ) and (max-width: 768px ){
+    /* nav-Bar start */
+    header{
+        width: 100%;
+    }
+    .logo{
+        font-size: 0.80rem;
+        margin-left: 10px;
+    }
+    .menu-icon{
+        font-size: 1.2rem;
+    }
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: -20px;
+        width: 250px;
+        background-color: #441215;
+        padding: 20px;
+        text-align: left;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        height: 60vh;
+    }
+    .nav_links li {
+        margin-bottom: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav_links.show {
+        display: flex;
+    }
+    /* Ensure search box appears first */
+    #search-box {
+        order: -1; /* Moves search bar to the top */
+        width: 100%; /* Ensures full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    #searchBar {
+        width: 70%; /* Adjust width for smaller screens */
+    }
+    /* nav-Bar end */
+
+form{
+    width: 90%;
+}
+textarea{
+    width: 90%;
+}
+button{
+    width: 100px;
+    font-size: 0.90rem;
+}
+    /* FORm */
+
+    /* FOrm end */
+
+/* Footer */
+
+.Footer_content{
+    color: white;
+    height: 30vh; 
+   display: block;
+   text-align: center;
+}
+.Footer_content p{
+    font-size: 0.90rem;
+}
+  .Footer_1st_child h3{
+    display: none;
+  }
+  .Footer_2nd_child{
+    margin: 20px;
+    font-size: 1rem;
+  }
+  .Footer_3rd_child{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.Footer_3rd_child h4{
+    font-size: 1rem;
+}
+.Footer_3rd_child li a{
+    font-size: 0.90rem;
+ }
+.copyright{
+    font-size: 0.60rem;
+}
+
+}
+
+@media ( min-width: 769px ) and (max-width: 1024px ){
+    /* nav-Bar start */
+    .logo{
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    header{
+        width: 100%;
+    }
+    .logo{
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    .menu-icon{
+        font-size: 1.2rem;
+    }
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: -20px;
+        width: 250px;
+        background-color: #441215;
+        padding: 20px;
+        text-align: left;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        height: 60vh;
+    }
+    .nav_links li {
+        margin-bottom: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav_links.show {
+        display: flex;
+    }
+    /* Ensure search box appears first */
+    #search-box {
+        order: -1; /* Moves search bar to the top */
+        width: 100%; /* Ensures full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    #searchBar {
+        width: 70%; /* Adjust width for smaller screens */
+    }
+    /* nav-Bar end */
+
+form{
+    width: 90%;
+}
+textarea{
+    width: 90%;
+}
+button{
+    width: 100px;
+    font-size: 0.90rem;
+}
+    /* FORm */
+
+    /* FOrm end */
+
+ /* footer */
+
+
+ .Footer_content{
+    color: white;
+    height: 30vh; 
+   display: block;
+   text-align: center;
+}
+.Footer_content p{
+    font-size: 1rem;
+}
+  .Footer_1st_child h3{
+    display: none;
+  }
+  .Footer_2nd_child{
+    margin: 20px;
+    font-size: 1rem;
+  }
+  .Footer_2nd_child h3{
+    font-size: 1.5rem;
+  }
+  .Footer_3rd_child{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.Footer_3rd_child h4{
+    font-size: 1.2rem;
+}
+.Footer_3rd_child li a{
+    font-size: 1rem;
+ }
+.copyright{
+    font-size: 0.80rem;
+}
+
+}
+@media ( min-width: 1025px ) and (max-width: 1200px ){
+    .footer {
+        text-align: center;
+        padding: 25px;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+    
+    .nav_links li {
+        padding: 10px;
+    }
+    
+    
+}
+
+

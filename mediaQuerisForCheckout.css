@@ -1,0 +1,49 @@
+@media ( min-width: 320px ) and (max-width: 480px ){
+
+    .container{
+        width: 70%;
+        height: 70vh;
+    }
+    .container input{
+       width: 95%;
+       margin-bottom: 2px;
+    }
+    
+}
+
+@media ( min-width: 481px ) and (max-width: 768px ){
+
+    .container{
+        width: 70%;
+        height: 70vh;
+    }
+    .container input{
+       width: 95%;
+       margin-bottom: 2px;
+    }
+    
+}
+@media ( min-width: 769px ) and (max-width: 1024px ){
+
+    .container{
+        width: 70%;
+        height: 70vh;
+    }
+    .container input{
+       width: 95%;
+       margin-bottom: 2px;
+    }
+    
+}
+@media ( min-width:1025px ) and (max-width: 1200px ){
+
+    .container{
+        width: 70%;
+        height: 70vh;
+    }
+    .container input{
+       width: 95%;
+       margin-bottom: 2px;
+    }
+    
+}

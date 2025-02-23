@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="mediaQuerisForCheckout.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top:60px; 
+            background-color: #f7ead5;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color:#441215 ;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #441215;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #6b282d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Complete Your Purchase</h2>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="address" placeholder="Shipping Address" required>
+        <select id="country" required>
+            <option value="">Select City</option>
+            <option value="USA">Karachi</option>
+            <option value="Canada">Islamabad</option>
+            <option value="UK">Lahore</option>
+            <option value="Australia">Quetta</option>
+            <option value="Australia">Multan</option>
+        </select>
+        <button onclick="processPayment()">Place Order</button>
+    </div>
+
+    <script>
+        function processPayment() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let address = document.getElementById("address").value.trim();
+            let city = document.getElementById("country").value.trim();
+    
+            if (!name || !email || !phone || !address || !city) {
+                alert("Please fill in all fields before placing your order.");
+                return;
+            }
+    
+            alert("Thank you for your order! 🎉 Your order has been placed successfully and will be delivered to your address soon. Payment will be collected upon delivery. You will receive a confirmation call or message shortly. If you have any questions, feel free to contact our support team. Happy shopping! 🛒");
+        }
+    </script>
+    
+</body>
+</html>

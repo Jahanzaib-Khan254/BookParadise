@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar */
+
+header{
+    height:75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #441215;
+    color: white;
+} 
+.logo{
+    margin-left: 30px;
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: white; /* Ensure visibility */
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.nav_links{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-right: 20px;
+    }
+.nav_links li {
+    list-style-type: none;
+}    
+.nav_links li a{
+    text-decoration: none;
+   color: white;
+    font-size: 1.1rem;
+    transition: all .5s;
+}
+.nav_links li a:hover{  text-decoration: underline;
+}
+#searchBar{
+    height: 20px;
+    width: 30vw;
+    border:none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 4px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.search-btn{
+   padding: 5px;
+   border: none;
+   height: 28px;
+   width: 32px;
+   margin: 0px;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   background-color: #ffcba5;
+   color: white;
+   font-weight: 800;
+}
+.search-btn:hover{
+    background-color: #ffb791;
+}
+.search-btn:active{
+    background-color: #ffcba5;
+}
+#search-box{
+    display: flex;
+    gap: 0px;
+}
+
+/* navbar end */
+
+/* Hero start */
+.Hero{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+    background-color: #aa866c;
+}
+.Hero h1{
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    color: #2d080a;
+}
+.Hero p{
+    margin-bottom: 12px;
+}
+.Hero_content{
+    width: 45%;
+    margin-left: 30px;
+}
+.Hero_content p span{
+    color: #2d080a;
+    font-weight: 600;
+}
+.Hero_content button{
+    background-color: #2d080a;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 25%;
+}
+.Hero_content button:hover{
+    background-color: #441215;
+}
+.Hero_image{
+    height: 90%;
+    width: 48%;
+    margin-right: 30px;
+    background-image: url(Images/Hero_Image.jpg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.Hero_image:hover{
+    background-position: bottom;
+}
+/* Hero end */
+
+
+/* Feature Products start */
+.Feature_products{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    background-color: #fce5d9;
+}
+.Feature_products h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #2d080a;
+    margin-bottom: 20px;
+}
+.product_container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.products{
+    height: 60%;
+    width: 23%;
+}
+.products a{
+    text-decoration: none;
+}
+.product_img{
+    width:100%;
+    height:70%;
+    margin-bottom: 3px;
+}
+
+.img_1{
+    background-image: url(Images/Book_1.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_1:hover{
+    background-position: bottom;
+}
+
+.img_2{
+    background-image: url(Images/Book_2.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_2:hover{
+    background-position: bottom;
+}
+
+.img_3{
+    background-image: url(Images/Book_3.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_3:hover{
+    background-position: bottom;
+}
+
+.img_4{
+    background-image: url(Images/Book_4.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_4:hover{
+    background-position: bottom;
+}
+
+.img_5{
+    background-image: url(Images/Book_5.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_5:hover{
+    background-position: bottom;
+}
+
+.img_6{
+    background-image: url(Images/Book_6.jpg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_6:hover{
+    background-position: bottom;
+}
+
+.img_7{
+    background-image: url(Images/Book_7.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_7:hover{
+    background-position: bottom;
+}
+
+.img_8{
+    background-image: url(Images/Book_8.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_8:hover{
+    background-position: bottom;
+}
+
+.img_9{
+    background-image: url(Images/Book_9.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_9:hover{
+    background-position: bottom;
+}
+
+.img_10{
+    background-image: url(Images/Book_10.jpg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_10:hover{
+    background-position: bottom;
+}
+.img_11{
+    background-image: url(Images/Book_11.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_11:hover{
+    background-position: bottom;
+}
+.img_12{
+    background-image: url(Images/Book_12.jpeg);
+    background-size: cover;
+    background-position: right;
+    transition: all 2s linear;
+}
+.img_12:hover{
+    background-position: left;
+}
+.img_13{
+    background-image: url(Images/Book_13.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_13:hover{
+    background-position: bottom;
+}
+.img_14{
+    background-image: url(Images/Book_14.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_14:hover{
+    background-position: bottom;
+}
+.img_15{
+    background-image: url(Images/Book_15.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_15:hover{
+    background-position: bottom;
+}
+.img_16{
+    background-image: url(Images/Book_16.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_16:hover{
+    background-position: bottom;
+}
+.img_17{
+    background-image: url(Images/Book_17.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_17:hover{
+    background-position: bottom;
+}
+.img_18{
+    background-image: url(Images/Book_18.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_18:hover{
+    background-position: bottom;
+}
+.img_19{
+    background-image: url(Images/Book_19.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_19:hover{
+    background-position: bottom;
+}
+.img_20{
+    background-image: url(Images/Book_20.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_20:hover{
+    background-position: bottom;
+}
+.img_21{
+    background-image: url(Images/Book_21.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_21:hover{
+    background-position: bottom;
+}
+.img_22{
+    background-image: url(Images/Book_22.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_22:hover{
+    background-position: bottom;
+}
+.img_23{
+    background-image: url(Images/Book_23.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_23:hover{
+    background-position: bottom;
+}.img_24{
+    background-image: url(Images/Book_24.jpeg);
+    background-size: cover;
+    background-position: top;
+    transition: all 2s linear;
+}
+.img_24:hover{
+    background-position: bottom;
+}
+.products p{
+    margin-top: 7px;
+    color: #2d080a;
+    font-weight: 500;
+}
+/* Feature Products end */
+
+/* Footer start */
+footer{
+    background-color: #2d080a;
+    width: 100%;
+    padding-bottom: 20px;
+    position: absolute;
+}
+.Footer_content{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh; 
+}
+.Footer_1st_child{
+    margin-left: 20px;
+}
+.Footer_2nd_child{
+    text-align: center;
+}
+.Footer_2nd_child h3{
+    margin-bottom: 6px;
+}
+.Footer_3rd_child{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.Footer_3rd_child h4{
+    margin-bottom: 10px;
+}
+.Footer_3rd_child li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.Footer_3rd_child li a{
+   text-decoration:  none;
+   color: white;
+}
+small{
+    color: white;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.view_all{
+    background-color: #fce5d9;
+    display: flex;
+    justify-content: center;
+}
+.view_all button{
+    background-color: #2d080a;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    font-size: 1.2rem;
+    margin: 10px;
+   
+}
+.view_all button:hover{
+    background-color: #441215;
+}
+
+
+/* filter by price */
+/* Filter By Price Button */
+.toggle-filter-btn {
+    background-color: #2d080a;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Dropdown Menu Styling */
+.price-filter {
+    display: none;  /* Hide by default */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #fce5d9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    z-index: 10;
+}
+

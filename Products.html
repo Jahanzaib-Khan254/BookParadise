@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="mediaQuerisForProducts.css">
+    
+    <style>
+        .product_searching {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+        }
+        .product_searching h3{
+            font-size: 1.8rem;
+            color:#2d080a;
+        }
+        .product_searching input{
+            height: 40px;
+            width: 400px;
+            padding-left:5px ;
+            border: none;
+        }
+        .product_searching input:hover{
+           border: 2px solid #2d080a;
+        }
+        .product_searching button{
+            background-color: #2d080a;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            padding: 5px;
+            width: 150px;
+        }
+        .pages_container{
+            background-color: #fce5d9;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+        .pages{
+            height: 50px;
+            width: 200px;
+            margin-left:20px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pages a{
+            height: 100%;
+            width: 26%;
+            border: 1px solid #2d080a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #2d080a;
+        }
+        .pages a:hover{
+            background-color: #2d080a;
+            color: white;
+        }
+        .page_num a{
+            text-decoration: none;
+            color: #2d080a;
+        }
+        body{
+            position: relative;
+        }
+        footer{
+            position: absolute;
+        }
+        #searchBar{
+            height: 35px;
+        }
+        .search-box{
+            display: flex;
+            gap :0px;
+        }
+        .search-btn{
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background-color: #441215;
+        }
+        .search-btn:hover{
+    background-color: #69272b;
+}
+.search-btn:active{
+    background-color: #441215;
+}
+/* Add this to your existing styles */
+.product_searching {
+    position: relative; /* Add this for proper dropdown positioning */
+}
+
+.price-filter {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    right: 140px;
+    background-color: white;
+    border: 1px solid #2d080a;
+    border-radius: 5px;
+    padding: 15px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 200px;
+    margin-top: 5px;
+}
+
+.price-filter.show {
+    display: flex; /* Show when active */
+}
+
+.price-filter input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.search-btn{
+    margin-right: 10px;
+}
+#filterBtn {
+    background-color: #2d080a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filterBtn:hover {
+    background-color: #441215;
+}
+#toggleFilter:hover {
+    background-color: #441215;
+}
+
+
+
+    </style>
+</head>
+<body>
+        
+<!-- Navbar start -->
+<header>
+    <div class="logo">
+        <h2>BookParadise</h2>
+    </div>
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav_links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+    </div>
+</header>
+<!--Navbar End  -->
+
+<!-- start main -->
+         <!-- Featured Products start -->
+     
+         <div class="Feature_products">
+            <div class="product_searching">
+                <h3>All Products</h3>
+                <div class="search-box">
+                    <input type="text" id="searchBar" placeholder="Search books..." list="suggestions">
+                    <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <!-- Filter By Price Dropdown Button -->
+                <button id="toggleFilter" class="toggle-filter-btn">Filter by Price ▼</button>
+                    <datalist id="suggestions"></datalist>
+                                    <!-- Dropdown Container (Initially Hidden) -->
+                <div id="priceFilter" class="price-filter">
+                    <input type="number" id="minPrice" placeholder="Min Price" min="0">
+                    <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+                    <button id="filterBtn">Apply Filter</button>
+                </div>
+                </div> 
+                        
+                </div>
+                
+                <!-- Dropdown Container (Initially Hidden) -->
+                <div id="priceFilter" class="price-filter">
+                    <input type="number" id="minPrice" placeholder="Min Price" min="0">
+                    <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+                    <button id="filterBtn">Apply Filter</button>
+                </div>
+                </div> 
+                        
+          
+            
+           
+         <div class="Feature_products">
+            <h2>Featured Products</h2>
+           
+            <div class="product_container">
+                
+                <Div class="products">
+                    <a href="Product_pages/Products_details_1.html"><div class="product_img img_1">
+                        <!-- Image insert through bg image in css --> <!-- Image insert through bg image in css -->
+                   </div>
+                   <p>Healing Is a gift by "Alexandera vasiliu"</p>
+                   <p><span>&#9733;</span>  <span>&#9734;</span>   <span>&#9734;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                   <p>$10</p>
+                </a>
+               </Div>
+
+               <Div class="products">
+                <a href="Product_pages/Products_details_2.html"><div class="product_img img_2">
+                    <!-- Image insert through bg image in css --> <!-- Image insert through bg image in css -->
+               </div>
+               <p>Great Gasby by "F.Scott fizgerald"</p>
+               <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+               <p>$15</p></a>
+                    
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_3.html">
+                    <div class="product_img img_3">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>Unleashed by "Sydnie Short"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$7</p>
+                </a>
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_4.html">
+                    <div class="product_img img_4">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>THe Nectar of Pain by "Najwa Zebian"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$15</p>
+                </a>
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_5.html">
+                    <div class="product_img img_5">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>The art of bieng alone by " Renuka Gavrani"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$10</p>
+                </a>
+                </a>
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_6.html">
+                    <div class="product_img img_6">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>Metamorphosis by "Franz Kafka"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$9</p>
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_7.html">
+                    <div class="product_img img_7">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>White Nights by "Fydor Dostovoesky"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$6</p>
+                </a>
+                </Div>
+                <Div class="products">
+                    <a href="Product_pages/Products_details_8.html">
+                    <div class="product_img img_8">
+                         <!-- Image insert through bg image in css -->
+                    </div>
+                    <p>The moon by "Kamilla Tolno"</p>
+                    <p><span>&#9733;</span>  <span>&#9733;</span>  <span>&#9733;</span>  <span>&#9734;</span>  <span>&#9734;</span></p>
+                    <p>$5</p>
+                </a>
+                </Div>
+            </div>
+          </div>
+          <!-- Featured Products End -->
+
+          <div class="pages_container">
+            <div class="pages">
+                <a href="Products.html"><div class="page_num">1</div></a>
+                <a href="Products_2.html" target="_blank"><div class="page_num">2</div></a>
+                <a href="Products_3.html" target="_blank"><div class="page_num">3</div></a>
+            </div>
+            </div>
+ <!-- End mmain -->
+
+    <!-- Footer start -->
+ <footer>
+    <div class="Footer_content">
+        <div class="Footer_1st_child">
+            <h3>BookParadise</h3>
+        </div>
+        <div class="Footer_2nd_child">
+            <h3>BookParadise</h3>
+            <p>Your one stop shop for all  your book requirements</p>
+        </div>
+        <div class="Footer_3rd_child">
+            <h4>Follow Us</h4>
+            <li><a href="https://www.facebook.com/facebook" target="_blank"> <i class="fa-brands fa-facebook"></i> Facebbok</a></li>
+            <li><a href="https://www.instagram.com/instagram/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/linkedin/"target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        </div>
+    </div>
+    <hr>
+   <div class="copyright"><small>© 1996-2024, Amazon.com, Inc. or its affiliates</small></div>
+ </footer>
+ <script src="Product.js"></script>   
+ <script src="script.js"></script>
+ <script src="responsive.js"></script>
+ 
+ <!-- Footer end -->
+</body>
+</html>
+
+
+
+
+
+
+
+
