@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/mediaQueriesForProductPages.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf0ea;
+        }
+        .container {
+            height: 80vh;
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #2d080a;
+            height: 100%;
+
+        }
+        .product-image{
+            width: 60%;
+        }
+        .product-details {
+            margin-left: 30px;
+        }
+        .product-title {
+            font-weight: bold;
+            color: #2d080a;
+        }
+        .price {
+            font-size: 20px;
+            color: #e60000;
+            margin: 10px 0;
+        }
+        .rating {
+            color: #2d080a;
+        }
+        .description {
+            margin: 15px 0;
+            color: #333;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .buy-now {
+            background-color: #2d080a;
+            color: white;
+        }
+        .buy-now:hover{
+            background-color: #502729;
+            color: white;
+        }
+        .add-to-cart {
+            background-color: #f5d6c6;
+        }
+        .add-to-cart:hover{
+            background-color: #e9aa8b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- Navbar start -->
+     <header>
+        <div class="logo">
+            <h2>BookParadise</h2>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav_links">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Products.html">Products</a></li>
+            <li><a href="/About.html">About Us</a></li>
+            <li><a href="/Contact.html">Contact Us</a></li>
+            <li><a href="/cart.html"> <i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+        </div>
+    </header>
+<!--Navbar End  -->
+
+<!-- MAin content -->
+    <div class="container">
+        <div class="product-image">
+            <img src="/Images/Book_6.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Metamorphosis by "Franz Kafka"</h1>
+            <p class="price">$9</p>
+            <p class="rating">★★★ (3/5)</p>
+            <p class="description">Find your next great read! Explore books across all genres, from thrilling mysteries to heartwarming romances. There's something for everyone!</p>
+            <div class="buttons">
+                <a href="/checkout.html" target="_blank"><button class="buy-now">Buy Now</button></a>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+<!-- Footer start -->
+<footer>
+    <div class="Footer_content">
+        <div class="Footer_1st_child">
+            <h3>BookParadise</h3>
+        </div>
+        <div class="Footer_2nd_child">
+            <h3>BookParadise</h3>
+            <p>Your one stop shop for all  your book requirements</p>
+        </div>
+        <div class="Footer_3rd_child">
+            <h4>Follow Us</h4>
+            <li><a href="https://www.facebook.com/facebook" target="_blank"> <i class="fa-brands fa-facebook"></i> Facebbok</a></li>
+            <li><a href="https://www.instagram.com/instagram/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/linkedin/"target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        </div>
+    </div>
+    <hr>
+   <div class="copyright"><small>© 1996-2024, Amazon.com, Inc. or its affiliates</small></div>
+ </footer>
+ <!-- Footer end -->
+ <script>
+    document.querySelector('.add-to-cart').addEventListener('click', function() {
+        const product = {
+            title: document.querySelector('.product-title').innerText,
+            price: document.querySelector('.price').innerText,
+            image: document.querySelector('.product-image img').src,
+            quantity: 1
+        };
+    
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Product added to cart!');
+    });
+    </script>
+    <script src="/responsive.js"></script>
+</body>
+</html>
